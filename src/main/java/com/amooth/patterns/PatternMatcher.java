@@ -103,7 +103,7 @@ public class PatternMatcher {
                 return matchingPatterns.get(0);
             }
         }
-        //TODO: at this point we probably received two identical patterns. Returning first.
+        //at this point we  received two identical patterns. Returning first.
         return matchingPatterns.get(0);
     }
 

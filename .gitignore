@@ -219,3 +219,4 @@ out/
 target/
 *.iml
 .idea/vcs.xml
+example_output.txt

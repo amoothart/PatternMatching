@@ -20,11 +20,13 @@ public class PatternMatching {
             if(patternMatcher.getBestPattern() == null) {
                System.out.println("NO MATCH");
             } else {
+                String output = "";
                 for(String subpattern : patternMatcher.getBestPattern()) {
-                    System.out.print(subpattern);
-                    System.out.print(","); //TODO: kill trailing comma
+                    output = output.concat(subpattern);
+                    output = output.concat(",");
                 }
-                System.out.println();
+                output = output.substring(0, output.length()-1); //clear the last comma
+                System.out.println(output);
             }
         }
     }
