@@ -2,12 +2,14 @@ package main.java.com.amooth.patterns;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PatternReader {
 
     private BufferedReader bufferedReader;
-    private final List<String[]> patterns = new ArrayList<String[]>();
+    private final Map<Integer, List<String[]>> patternsGroupedByLength = new HashMap<Integer, List<String[]>>();
     private final List<String[]> paths = new ArrayList<String[]>();
 
     public PatternReader() {
@@ -26,12 +28,12 @@ public class PatternReader {
         try {
             patternCount = Integer.valueOf(patternCountString);
         } catch (NumberFormatException e) {
-            //Would normally print nice error message, explicitly instructed not to add extra stdout
+            //Would normally print nice error message
             //will force an empty List to be returned
         }
         for (int i = 0; i < patternCount; i++) {
             String pattern = bufferedReader.readLine();
-            patterns.add(i, pattern.split(","));
+            addPatternToMap(pattern.split(","));
         }
     }
 
@@ -41,7 +43,7 @@ public class PatternReader {
         try {
             pathCount = Integer.valueOf(pathCountString);
         } catch (NumberFormatException e) {
-            //Would normally print nice error message, explicitly instructed not to add extra stdout
+            //Would normally print nice error message
             //will force an empty List to be returned
         }
 
@@ -53,12 +55,27 @@ public class PatternReader {
             if(path.endsWith("/")) {
                 path = path.substring(0, path.length()-1);
             }
-            paths.add(i, path.split("/"));
+            String[] pathArray = path.split("/");
+            paths.add(pathArray);
+
+            if(!patternsGroupedByLength.containsKey(pathArray.length)) {
+                patternsGroupedByLength.put(pathArray.length, new ArrayList<String[]>());
+            }
         }
     }
 
-    public List<String[]> getPatterns() {
-        return patterns;
+    private void addPatternToMap(String[] pattern) {
+        List<String[]> patterns = patternsGroupedByLength.get(pattern.length);
+        if(patterns == null) {
+            patterns = new ArrayList<String[]>();
+            patternsGroupedByLength.put(pattern.length, patterns);
+        }
+        patterns.add(pattern);
+
+    }
+
+    public List<String[]> getPatterns(int patternLength) {
+        return patternsGroupedByLength.get(patternLength);
     }
 
     public List<String[]> getPaths() {

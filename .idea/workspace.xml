@@ -30,10 +30,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
                   <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#64#65#0" expanded="true" />
-                    <element signature="e#113#114#0" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -42,8 +39,10 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatcher.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
-                  <caret line="105" column="27" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
-                  <folding />
+                  <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#264#274#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -51,8 +50,8 @@
           <file leaf-file-name="PatternMatching.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatching.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.80526316" vertical-offset="0" max-vertical-offset="663">
-                  <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+                  <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -85,8 +84,8 @@
           <file leaf-file-name="example_input.txt" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/example_input.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-                  <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
+                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -105,9 +104,14 @@
           <file leaf-file-name="PatternReader.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternReader.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.11929824" vertical-offset="272" max-vertical-offset="1139">
-                  <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-                  <folding />
+                <state vertical-scroll-proportion="0.7614035" vertical-offset="450" max-vertical-offset="1428">
+                  <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#315#340#0" expanded="true" />
+                    <element signature="e#398#408#0" expanded="true" />
+                    <element signature="e#2636#2637#0" expanded="true" />
+                    <element signature="e#2701#2702#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -130,16 +134,16 @@
         <option value="$PROJECT_DIR$/src/com/amooth/Main.java" />
         <option value="$USER_HOME$/test/Test.java" />
         <option value="$PROJECT_DIR$/empty_input.txt" />
-        <option value="$PROJECT_DIR$/example_input.txt" />
         <option value="$PROJECT_DIR$/src/com/amooth/PatternReader.java" />
         <option value="$PROJECT_DIR$/src/com/amooth/PatternMatching.java" />
         <option value="$PROJECT_DIR$/src/com/amooth/PatternMatcher.java" />
         <option value="$PROJECT_DIR$/src/com/amooth/patterns/PatternMatching.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/amooth/patterns/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternReader.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatching.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatcher.java" />
+        <option value="$PROJECT_DIR$/example_input.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatching.java" />
       </list>
     </option>
   </component>
@@ -500,22 +504,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/empty_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding>
-            <element signature="e#64#65#0" expanded="true" />
-            <element signature="e#113#114#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -537,14 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3223" max-vertical-offset="3876">
@@ -553,26 +538,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/empty_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11929824" vertical-offset="272" max-vertical-offset="1139">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.7614035" vertical-offset="450" max-vertical-offset="1428">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding>
+            <element signature="e#315#340#0" expanded="true" />
+            <element signature="e#398#408#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+            <element signature="e#2701#2702#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
-          <caret line="105" column="27" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
-          <folding />
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#264#274#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/amooth/patterns/PatternMatching.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80526316" vertical-offset="0" max-vertical-offset="663">
-          <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>

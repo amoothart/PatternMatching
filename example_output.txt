@@ -9,3 +9,10 @@ h,i
 j
 j
 NO MATCH
+l,*,n,*,p
+l,*,n,*,p
+NO MATCH
+NO MATCH
+NO MATCH
+**,r
+NO MATCH
