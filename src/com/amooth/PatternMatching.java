@@ -1,7 +1,6 @@
 package com.amooth;
 
 //input edge cases (slashes
-//accept file input
 //allow for command line input
 //output to a file
 //mavenize
@@ -21,7 +20,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class PatternMatching {
 
     public static void main(String[] args) throws IOException {
         String fileInput = args[0];
@@ -29,7 +28,12 @@ public class Main {
 
         List<String[]> patterns = new ArrayList<String[]>();
         String patternCountString = bufferedReader.readLine();
-        int patternCount = Integer.valueOf(patternCountString);
+        int patternCount = 0;
+        try {
+            patternCount = Integer.valueOf(patternCountString);
+        } catch (NumberFormatException e) {
+            return; //Would normally print nice error message, explicitly instructed not to add extra stdout
+        }
         for(int i = 0; i < patternCount; i++) {
             String pattern = bufferedReader.readLine();
             patterns.add(i, pattern.split(","));
@@ -37,7 +41,12 @@ public class Main {
 
         List<String[]> paths = new ArrayList<String[]>();
         String pathCountString = bufferedReader.readLine();
-        int pathCount = Integer.valueOf(pathCountString);
+        int pathCount = 0;
+        try {
+            pathCount = Integer.valueOf(pathCountString);
+        } catch (NumberFormatException e) {
+            return; //Would normally print nice error message, explicitly instructed not to add extra stdout
+        }
 
         for(int i = 0; i< pathCount; i++) {
             String path = bufferedReader.readLine();
@@ -54,8 +63,6 @@ public class Main {
             bestPatternMatch(patterns, path);
         }
     }
-
-
 
     private static void bestPatternMatch(List<String[]> patterns, String[] path){
         List<String[]> matchingPatterns = new ArrayList<String[]>();
@@ -133,7 +140,7 @@ public class Main {
         for(int i = 0; i < matchingPatterns.get(0).length; i++) {
             List<String[]> toEliminate = new ArrayList<String[]>();
             for(String[] possibleBest : matchingPatterns) {
-                if(possibleBest[0].equals("*")) {
+                if(possibleBest[i].equals("*")) {
                     toEliminate.add(possibleBest);
                 }
             }
