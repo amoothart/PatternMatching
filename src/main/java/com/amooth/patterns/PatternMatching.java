@@ -3,6 +3,7 @@ package main.java.com.amooth.patterns;
 public class PatternMatching {
 
     public static void main(String[] args) {
+        long beginTime = System.currentTimeMillis();
         PatternReader patternReader = new PatternReader();
 
         for(String[] path : patternReader.getPaths()) {
@@ -20,5 +21,9 @@ public class PatternMatching {
                 System.out.println(output);
             }
         }
+
+        long endTime = System.currentTimeMillis();
+        //For performance testing
+        //System.out.println("Program took: " + (endTime-beginTime));
     }
 }
