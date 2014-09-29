@@ -1,9 +1,6 @@
-package com.amooth;
+package main.java.com.amooth.patterns;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,12 +10,8 @@ public class PatternReader {
     private final List<String[]> patterns = new ArrayList<String[]>();
     private final List<String[]> paths = new ArrayList<String[]>();
 
-    public PatternReader(String inputFile) {
-        try {
-            bufferedReader = new BufferedReader(new FileReader(inputFile));
-        } catch (FileNotFoundException e) {
-            //Would normally print nice error message, explicitly instructed not to add extra stdout
-        }
+    public PatternReader() {
+        bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         try {
             loadPatterns();
             loadPaths();

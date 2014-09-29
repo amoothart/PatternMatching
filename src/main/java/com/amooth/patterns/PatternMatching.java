@@ -1,8 +1,6 @@
-package com.amooth;
+package main.java.com.amooth.patterns;
 
 //allow for command line input
-//output to a file
-//mavenize
 //put in git repo
 //test cases( )
 
@@ -14,7 +12,7 @@ package com.amooth;
 public class PatternMatching {
 
     public static void main(String[] args) {
-        PatternReader patternReader = new PatternReader(args[0]);
+        PatternReader patternReader = new PatternReader();
 
         for(String[] path : patternReader.getPaths()) {
             PatternMatcher patternMatcher = new PatternMatcher(patternReader.getPatterns(), path);

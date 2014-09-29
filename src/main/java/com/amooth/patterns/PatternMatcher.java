@@ -1,4 +1,4 @@
-package com.amooth;
+package main.java.com.amooth.patterns;
 
 import java.util.ArrayList;
 import java.util.List;
