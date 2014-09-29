@@ -1,66 +1,26 @@
 package com.amooth;
 
-//input edge cases (slashes
 //allow for command line input
 //output to a file
 //mavenize
 //put in git repo
-//handle exceptions gracefully
-//test cases
-//invalid(extra /, identical patterns, missing file, all best matches start with a *, )
+//test cases( )
 
 //perf thoughts
 //key value setup by length since shorter or longer doesn't matter
 //sort patterns alphabetically?
 //turn it into a hash tree lookup
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PatternMatching {
 
-    public static void main(String[] args) throws IOException {
-        String fileInput = args[0];
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(fileInput));
+    public static void main(String[] args) {
+        PatternReader patternReader = new PatternReader(args[0]);
 
-        List<String[]> patterns = new ArrayList<String[]>();
-        String patternCountString = bufferedReader.readLine();
-        int patternCount = 0;
-        try {
-            patternCount = Integer.valueOf(patternCountString);
-        } catch (NumberFormatException e) {
-            return; //Would normally print nice error message, explicitly instructed not to add extra stdout
-        }
-        for(int i = 0; i < patternCount; i++) {
-            String pattern = bufferedReader.readLine();
-            patterns.add(i, pattern.split(","));
-        }
-
-        List<String[]> paths = new ArrayList<String[]>();
-        String pathCountString = bufferedReader.readLine();
-        int pathCount = 0;
-        try {
-            pathCount = Integer.valueOf(pathCountString);
-        } catch (NumberFormatException e) {
-            return; //Would normally print nice error message, explicitly instructed not to add extra stdout
-        }
-
-        for(int i = 0; i< pathCount; i++) {
-            String path = bufferedReader.readLine();
-            if(path.startsWith("/")) {
-                path = path.substring(1);
-            }
-            if(path.endsWith("/")) {
-                path = path.substring(0, path.length()-1);
-            }
-            paths.add(i, path.split("/"));
-        }
-
-        for(String[] path : paths) {
-            bestPatternMatch(patterns, path);
+        for(String[] path : patternReader.getPaths()) {
+            bestPatternMatch(patternReader.getPatterns(), path);
         }
     }
 

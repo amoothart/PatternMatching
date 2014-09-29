@@ -1,4 +1,4 @@
-8
+12
 *,b,*
 a,*,*
 *,*,c
@@ -7,10 +7,19 @@ w,x,*,*
 *,x,y,z
 *,*,f,g
 *,e,*,g
-6
+h,i
+h,i
+j
+k
+11
 /w/x/y/z/
 a/b/c
 foo/
 foo/bar/
 foo/bar/baz/
 /d/e/f/g
+h/i
+/h/i/
+j
+/j/
+//k
