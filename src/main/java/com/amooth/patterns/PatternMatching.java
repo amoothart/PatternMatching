@@ -24,6 +24,6 @@ public class PatternMatching {
 
         long endTime = System.currentTimeMillis();
         //For performance testing
-        //System.out.println("Program took: " + (endTime-beginTime));
+//        System.out.println("Program took: " + (endTime-beginTime));
     }
 }

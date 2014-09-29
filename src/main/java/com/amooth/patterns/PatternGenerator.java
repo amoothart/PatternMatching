@@ -11,8 +11,8 @@ public class PatternGenerator {
     public static void main(String args[]) throws FileNotFoundException, UnsupportedEncodingException {
         PrintWriter printWriter = new PrintWriter("generated_input.txt", "UTF-8");
 
-        printWriter.println("1000000");
-        for(int i = 0; i<1000000; i++) {
+        printWriter.println("100000");
+        for(int i = 0; i<100000; i++) {
             Random random = new Random();
             int depth = random.nextInt(5) + 1;
             String pattern = "";
@@ -31,8 +31,8 @@ public class PatternGenerator {
             printWriter.println(pattern);
         }
 
-        printWriter.println("1000000");
-        for(int i = 0; i<1000000; i++) {
+        printWriter.println("100000");
+        for(int i = 0; i<100000; i++) {
             Random random = new Random();
             int depth = random.nextInt(5) + 1;
             String path = "";
@@ -48,8 +48,8 @@ public class PatternGenerator {
             }
 
             int useSlashEnd = random.nextInt(4);
-            if(useSlashEnd == 0) {
-                path = path.concat("/");
+            if(useSlashEnd != 0) {
+                path = path.substring(0, path.length()-1);
             }
 
             printWriter.println(path);
