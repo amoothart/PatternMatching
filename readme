@@ -1,0 +1,4 @@
+mvn package
+//run against pattern file 'example_input.txt'
+java -cp target\PatternMatching-1.0-SNAPSHOT.jar main.java.com.amooth.patterns.PatternMatching example_input.txt > example_output.txt
+//use PatternGenerator to create random test input
